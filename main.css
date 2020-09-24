@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+  --primary-bg-color: hsl(257, 40%, 49%);
+  --primary-font-color: white;
+  --primary-fs: 'Open Sans', sans-serif;
+  --secondary-fs: 'Poppins';
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  background-image: url('./images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 14px;
+  font-family: var(--primary-fs);
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.logo__image {
+  padding: 20px;
+}
+
+.logo__image img {
+  width: 200px;
+  padding: 20px;
+}
+
+.main_container {
+  display: inline-flex;
+}
+
+.left__container {
+  margin: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.left__container img {
+  width: 100%;
+}
+
+.right__container {
+  margin: 30px 30px 30px 0;
+  padding: 30px 0;
+  color: var(--primary-font-color);
+  font-family: var(--secondary-fs);
+}
+
+.right__container-title {
+  padding: 20px 0;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.right__container-text {
+  padding-bottom: 20px;
+  padding-right: 60px;
+  text-align: justify;
+}
+
+.redes__container {
+  width: 100%;
+}
+
+.icons__container {
+  padding-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.icons__container li {
+  margin-right: 20px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--primary-font-color);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.icons__container li:hover {
+  background: #9c4cb0;
+}
+
+ion-icon {
+  font-size: 18px;
+  color: var(--primary-font-color);
+  padding: 9px;
+}
+
+.btn {
+  border-radius: 70px; /* Esquinas redondeadas */
+  border: none;
+  color: var(--primary-bg-color);
+  padding: 16px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.14em;
+  margin: 4px 2px;
+  /* -webkit-transition-duration: 0.4s; Safari
+  transition-duration: 0.4s; */
+  cursor: pointer;
+}
