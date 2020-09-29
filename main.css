@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root {
   --primary-bg-color: hsl(257, 40%, 49%);
+  --secondary-bg-color: #9c4cb0;
   --primary-font-color: white;
   --primary-fs: 'Open Sans', sans-serif;
   --secondary-fs: 'Poppins';
@@ -89,7 +90,7 @@ header {
 }
 
 .icons__container li:hover {
-  background: #9c4cb0;
+  background: var(--secondary-bg-color);
 }
 
 ion-icon {
@@ -111,4 +112,67 @@ ion-icon {
   /* -webkit-transition-duration: 0.4s; Safari
   transition-duration: 0.4s; */
   cursor: pointer;
+}
+
+.btn:hover {
+  border: 1px solid rgb(239, 239, 239);
+  background-color: #744dbc;
+  color: var(--primary-font-color);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .left__container {
+    margin: 0;
+  }
+
+  .right__container {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-font-color);
+    font-family: var(--secondary-fs);
+  }
+
+  .right__container-text {
+    padding: 0 30px 20px;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 14px 84px;
+  }
+
+  .redes__container {
+    padding-top: 20px;
+  }
+
+  .icons__container {
+    padding-right: 0;
+    padding-left: 16px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .right__container {
+    font-size: 0.8em;
+  }
+
+  .btn {
+    margin: 0;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
 }
